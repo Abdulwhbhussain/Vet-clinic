@@ -26,3 +26,24 @@ WHERE name NOT IN ('Gabumon');
 SELECT *
 from animals
 WHERE weight_kg BETWEEN 10.4 and 17.3;
+/* Pull Request #2 */
+BEGIN;
+UPDATE animals
+SET species = 'unspecified';
+SELECT *
+FROM animals;
+ROLLBACK;
+SELECT *
+FROM animals;
+BEGIN;
+UPDATE animals
+SET species = 'digimon'
+WHERE name LIKE '%mon';
+UPDATE animals
+SET species = 'pokemon'
+WHERE species is NULL;
+SELECT *
+from animals;
+COMMIT;
+SELECT *
+FROM animals;
