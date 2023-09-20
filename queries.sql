@@ -97,3 +97,12 @@ SELECT a.name
 FROM species AS s
   JOIN animals AS a ON s.id = a.species_id
 WHERE s.name = 'Pokemon';
+SELECT o.full_name,
+  a.name
+FROM owners AS o
+  LEFT JOIN animals AS a ON o.id = a.owner_id;
+SELECT s.name,
+  COUNT(a.name)
+FROM species AS s
+  JOIN animals AS a ON s.id = a.species_id
+GROUP BY s.name;
