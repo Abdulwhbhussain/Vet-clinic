@@ -88,3 +88,8 @@ SELECT species,
 FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
+/* Pull Request #3 */
+SELECT a.name
+from owners AS o
+  JOIN animals AS a ON o.id = a.owner_id
+WHERE o.full_name = 'Melody Pond';
