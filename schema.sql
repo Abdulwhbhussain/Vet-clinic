@@ -11,3 +11,22 @@ CREATE TABLE animals(
 /* Pull Request no.2 */
 ALTER TABLE animals
 ADD species VARCHAR(50);
+/* Pull Request no.3 */
+CREATE TABLE owners(
+    id INT GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
+    full_name VARCHAR(250) NOT NULL,
+    age INT NOT NULL
+);
+CREATE TABLE species(
+    id INT GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
+    name VARCHAR(250) NOT NULL
+);
+ALTER TABLE animals DROP COLUMN species;
+ALTER TABLE animals
+ADD species_id INT;
+ALTER TABLE animals
+ADD owner_id INT;
+ALTER TABLE animals
+ADD CONSTRAINT fk_species FOREIGN KEY (species_id) REFERENCES species(id);
+ALTER TABLE animals
+ADD CONSTRAINT fk_owner FOREIGN KEY (owner_id) REFERENCES owners(id);
