@@ -93,3 +93,7 @@ SELECT a.name
 from owners AS o
   JOIN animals AS a ON o.id = a.owner_id
 WHERE o.full_name = 'Melody Pond';
+SELECT a.name
+FROM species AS s
+  JOIN animals AS a ON s.id = a.species_id
+WHERE s.name = 'Pokemon';
