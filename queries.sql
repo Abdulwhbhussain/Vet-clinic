@@ -100,7 +100,9 @@ WHERE s.name = 'Pokemon';
 SELECT o.full_name,
   a.name
 FROM owners AS o
-  LEFT JOIN animals AS a ON o.id = a.owner_id;
+  LEFT JOIN animals AS a ON o.id = a.owner_id
+ORDER BY o.full_name,
+  a.name;
 SELECT s.name,
   COUNT(a.name)
 FROM species AS s
