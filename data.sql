@@ -77,7 +77,7 @@ SET owner_id = (
     FROM owners
     WHERE full_name = 'Melody Pond'
   )
-WHERE name IN ('Charmandor', 'Squirtle', 'Blossom');
+WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
 UPDATE animals
 SET owner_id = (
     SELECT id
