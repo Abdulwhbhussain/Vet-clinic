@@ -75,12 +75,6 @@ Example commands:
   
 >
 
-👤 **Author**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/LinkedInhandle/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
@@ -118,4 +112,4 @@ I would like to thank Microverse and my peers.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://opensource.org/license/mit/) licensed.
