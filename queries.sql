@@ -166,3 +166,11 @@ FROM visits AS vs
 WHERE vt.name = 'Maisy Smith'
 ORDER BY vs.visit_date ASC
 LIMIT 1;
+SELECT a.name AS animal_name,
+  vt.name AS vet_name,
+  vs.visit_date
+FROM visits AS vs
+  JOIN vets AS vt ON vs.vet_id = vt.id
+  JOIN animals AS a ON vs.animal_id = a.id
+ORDER BY vs.visit_date DESC
+LIMIT 1;
