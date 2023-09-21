@@ -88,3 +88,40 @@ SELECT species,
 FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
+/* Pull Request #3 */
+SELECT a.name
+from owners AS o
+  JOIN animals AS a ON o.id = a.owner_id
+WHERE o.full_name = 'Melody Pond';
+SELECT a.name
+FROM species AS s
+  JOIN animals AS a ON s.id = a.species_id
+WHERE s.name = 'Pokemon';
+SELECT o.full_name,
+  a.name
+FROM owners AS o
+  LEFT JOIN animals AS a ON o.id = a.owner_id
+ORDER BY o.full_name,
+  a.name;
+SELECT s.name,
+  COUNT(a.name)
+FROM species AS s
+  JOIN animals AS a ON s.id = a.species_id
+GROUP BY s.name;
+SELECT a.name
+FROM animals AS a
+  JOIN species AS s ON a.species_id = s.id
+  JOIN owners AS o ON a.owner_id = o.id
+WHERE s.name = 'Digimon'
+  AND o.full_name = 'Jennifer Orwell';
+SELECT a.name
+FROM animals AS a
+  JOIN owners AS o ON a.owner_id = o.id
+WHERE o.full_name = 'Dean Winchester'
+  AND a.escape_attempts = 0;
+SELECT o.full_name
+FROM owners AS o
+  JOIN animals AS a ON o.id = a.owner_id
+GROUP BY o.full_name
+ORDER BY COUNT(a.name) DESC
+LIMIT 1;
