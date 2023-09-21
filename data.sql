@@ -236,7 +236,7 @@ VALUES (
     (
       SELECT id
       from animals
-      WHERE name = 'Charmandor'
+      WHERE name = 'Charmander'
     ),
     (
       SELECT id

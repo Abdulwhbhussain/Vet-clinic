@@ -37,7 +37,7 @@ CREATE TABLE vets(
     age INT NOT NULL,
     date_of_graduation DATE
 );
-CREATE TABLE specialization(
+CREATE TABLE specializations(
     species_id INT REFERENCES species(id),
     vet_id INT REFERENCES vets(id)
 );
