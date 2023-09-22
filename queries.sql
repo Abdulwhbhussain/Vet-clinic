@@ -174,3 +174,20 @@ FROM visits AS vs
   JOIN animals AS a ON vs.animal_id = a.id
 ORDER BY vs.visit_date DESC
 LIMIT 1;
+SELECT COUNT(*) AS num_visits
+FROM visits vs
+  JOIN animals a ON vs.animal_id = a.id
+  JOIN vets vt ON vs.vet_id = vt.id
+  LEFT JOIN specializations sp ON vt.id = sp.vet_id
+  AND a.species_id = sp.species_id
+WHERE sp.vet_id IS NULL;
+SELECT sp.name AS specialization,
+  COUNT(sp.name)
+FROM animals AS a
+  JOIN species AS sp ON a.species_id = sp.id
+  JOIN visits AS visit ON a.id = visit.animal_id
+  JOIN vets AS v ON v.id = visit.vet_id
+WHERE v.name = 'Maisy Smith'
+GROUP BY sp.name
+ORDER BY COUNT(sp.name) DESC
+LIMIT 1;
