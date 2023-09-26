@@ -1,3 +1,11 @@
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="wahab_icon.jpeg" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Microverse Vet Clinic Database Project</b></h3>
+
+</div>
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
@@ -118,6 +126,6 @@ I would like to thank Microverse and my peers.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
