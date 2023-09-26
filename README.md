@@ -72,7 +72,13 @@ Example commands:
 - GitHub: [Abdulwhbhussain](https://github.com/Abdulwhbhussain)
 - LinkedIn: [Abdulwhbhussain](https://www.linkedin.com/in/abdulwhbhussain)
 - Twitter: [Abdulwhbhussain](https://twitter.com/AbdulWhbHussain)
-  
+
+👤 Sodeeq Awoyemi
+
+- GitHub: [@githubhandle](https://github.com/Errytagedesign)
+- Twitter: [@twitterhandle](https://twitter.com/errytage)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/errytagedesigns/)
+
 >
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
