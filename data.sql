@@ -402,7 +402,7 @@ VALUES (
     '2019-09-29'
   );
 /* Pull Request no.5 */
-INSERT INTO visits (animal_id, vet_id, date_of_visit)
+INSERT INTO visits (animal_id, vet_id, visit_date)
 SELECT *
 FROM (
     SELECT id
