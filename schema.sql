@@ -49,3 +49,5 @@ CREATE TABLE visits(
 /* Pull request no. 5 */
 ALTER TABLE owners
 ADD COLUMN email VARCHAR(120);
+ALTER TABLE owners
+ALTER COLUMN age DROP NOT NULL;
